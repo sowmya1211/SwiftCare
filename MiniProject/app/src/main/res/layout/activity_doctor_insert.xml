@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="@color/purple"
+    android:orientation="vertical"
+    tools:context=".InsertDoctorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:text="Add Doctor"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="450dp"
+            android:layout_margin="50dp"
+            android:orientation="vertical"
+            android:translationY="-50dp">
+
+
+            <EditText
+                android:id="@+id/entered_doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="Name"
+                android:padding="8dp"
+                android:textColor="@color/purple_700"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:translationY="-20dp" />
+
+
+            <LinearLayout
+                android:layout_width="252dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/department_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+
+                    android:gravity="center|left"
+                    android:text="Department"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <Spinner
+                    android:id="@+id/entered_department_name"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/entered_doctor_designation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="Designation"
+                android:padding="8dp"
+                android:textColor="@color/purple_700"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:translationY="-20dp" />
+
+
+            <LinearLayout
+                android:layout_width="252dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/doctor_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="Gender"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/genderfemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="@color/purple"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+                    <RadioButton
+                        android:id="@+id/gendermale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="@color/purple"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/entered_doctor_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="@color/purple_700"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:translationY="-20dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="222dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="39dp"
+            android:backgroundTint="@color/purple"
+            android:text="Insert"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationX="-30dp"
+            android:translationY="450dp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="228dp"
+            android:layout_marginBottom="38dp"
+            android:backgroundTint="@color/purple"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationY="450dp"
+            android:typeface="monospace" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="356dp"
+        android:layout_height="71dp"
+        android:translationX="-30dp"
+        android:translationY="-160dp">
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="205dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="206dp"
+            android:layout_marginBottom="19dp"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout> -->
+</LinearLayout>

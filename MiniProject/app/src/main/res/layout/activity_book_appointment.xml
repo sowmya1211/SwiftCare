@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookAppointmentActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Book Appointment"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textColor="@color/lavender"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:padding="2dp"
+                android:background="@drawable/shadow" >
+
+                <LinearLayout
+                    android:id="@+id/cardiologyDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/border"
+                    android:clickable="true" >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cardiology"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:shapeAppearance="@style/roundedImageViewRounded" />
+
+                    <TextView
+                        android:id="@+id/cardiology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Cardiology"
+                        android:typeface="monospace"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:padding="2dp"
+                android:background="@drawable/shadow" >
+
+                <LinearLayout
+                    android:id="@+id/dermatologyDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/border"
+                    android:clickable="true" >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/dermatology"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:shapeAppearance="@style/roundedImageViewRounded" />
+
+                    <TextView
+                        android:id="@+id/dermatology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Dermatology"
+                        android:typeface="monospace"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:padding="2dp"
+                android:background="@drawable/shadow" >
+
+                <LinearLayout
+                    android:id="@+id/ophthalmologyDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/border"
+                    android:clickable="true" >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ophthalmology"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:shapeAppearance="@style/roundedImageViewRounded" />
+
+                    <TextView
+                        android:id="@+id/ophthalmology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Ophthalmology"
+                        android:typeface="monospace"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:padding="2dp"
+                android:background="@drawable/shadow" >
+
+                <LinearLayout
+                    android:id="@+id/generalDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/border"
+                    android:clickable="true" >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/general"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:shapeAppearance="@style/roundedImageViewRounded" />
+
+                    <TextView
+                        android:id="@+id/general"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="General"
+                        android:typeface="monospace"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:padding="2dp"
+                android:background="@drawable/shadow" >
+
+                <LinearLayout
+                    android:id="@+id/neurologyDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/border"
+                    android:clickable="true" >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/neurology"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:shapeAppearance="@style/roundedImageViewRounded" />
+
+                    <TextView
+                        android:id="@+id/neurology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Neurology"
+                        android:typeface="monospace"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:padding="2dp"
+                android:background="@drawable/shadow" >
+
+                <LinearLayout
+                    android:id="@+id/gynecologyDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/border"
+                    android:clickable="true" >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/gynecology"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:shapeAppearance="@style/roundedImageViewRounded" />
+
+                    <TextView
+                        android:id="@+id/gynecology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Gynecology"
+                        android:typeface="monospace"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:elevation="20dp"
+                android:padding="2dp"
+                android:background="@drawable/shadow" >
+
+                <LinearLayout
+                    android:id="@+id/orthopaedicsDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/border"
+                    android:clickable="true" >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/orthopaedics"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:shapeAppearance="@style/roundedImageViewRounded" />
+
+                    <TextView
+                        android:id="@+id/orthopaedics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Orthopaedics"
+                        android:typeface="monospace"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/purple"
+        android:text="Back"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+</LinearLayout>
